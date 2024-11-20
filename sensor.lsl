@@ -28,7 +28,8 @@ default
            // _objectKeys = [];
             llOwnerSay(llDetectedName(0));
             // num starts at highest number found, 0 indexed, -1 is nothing
-            llLinksetDataWrite(tempmenu+globaltoken+(string)(num),"");
+            llLinksetDataDelete(tempmenu+globaltoken+(string)(num+1));
+           //llLinksetDataWrite(tempmenu+globaltoken+(string)(num),"");
             // insert blank entry at last item to stop overrun!!
             --num;
             llOwnerSay((string)num);
