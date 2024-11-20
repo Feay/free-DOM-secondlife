@@ -77,7 +77,7 @@ link_message(integer sender_num, integer num, string str, key id)
     }
 }
 else if(867530901==num){
-llOwnerSay(llKey2Name(str));
+llOwnerSay(llKey2Name(str)); // call back if someone clicks an item from the menu we just popped, thru the action type h, loaded above and retrived by the menu engine
 
     }
 }
